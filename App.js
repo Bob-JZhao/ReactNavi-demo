@@ -11,28 +11,8 @@ class LogoTitle extends React.Component {
 
 class HomeScreen extends React.Component {
   static navigationOptions = ({ navigation }) => {
-    console.log();
     return {
-      headerTitle: <LogoTitle />,
-      headerRight: (
-        <Button
-          onPress={() => {
-            navigation.navigate("Details", {
-              itemId: 86,
-              otherParam: "First Details"
-            });
-          }}
-          title="Next"
-          color="#fff"
-        />
-      ),
-      headerLeft: (
-        <Button
-          onPress={() => alert("This is a button!")}
-          title="Back"
-          color="#fff"
-        />
-      )
+      headerTitle: "Home screen"
     };
   };
 
@@ -41,7 +21,7 @@ class HomeScreen extends React.Component {
       <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
         <Text>Home Screen</Text>
         <Button
-          title="Go to Details"
+          title="Start !!!"
           onPress={() => {
             /* 1. Navigate to the Details route with params */
             this.props.navigation.navigate("Details", {
@@ -61,14 +41,14 @@ class DetailsScreen extends React.Component {
     headerRight: (
       <Button
         onPress={() => alert("This is a button!")}
-        title="Info"
+        title="Back"
         color="#fff"
       />
     ),
     headerLeft: (
       <Button
         onPress={() => alert("This is a button!")}
-        title="Info"
+        title="Next"
         color="#fff"
       />
     )
