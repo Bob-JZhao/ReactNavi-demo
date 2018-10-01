@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, View, Button, CameraRoll } from "react-native";
+import { Text, View, Button, CameraRoll, StyleSheet } from "react-native";
 import { Item, Input, Icon } from "native-base";
 import Camera from "react-native-camera";
 

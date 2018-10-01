@@ -48,8 +48,8 @@ class CommentScreen extends React.Component {
           onPress={() => this.props.navigation.navigate("Details")}
         />
         <Button
-          title="Go back"
-          onPress={() => this.props.navigation.goBack()}
+          title="Go Home"
+          onPress={() => this.props.navigation.navigate("Home")}
         />
       </View>
     );
